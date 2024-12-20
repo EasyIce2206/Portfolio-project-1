@@ -1,4 +1,4 @@
-/* Add your CSS code here */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color:#342628;
+    background-color: #342628;
     color: #FEAA00;
     text-align: center;
     padding: 10px 0;
@@ -14,22 +14,22 @@ header {
 
 nav ul {
     list-style-type: none;
-    margin: 10;
+    margin: 0;
     padding: 0;
     text-align: center;
     background-color: #FEAA00;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: black;
     font-weight: bold;
-    padding: auto;
-
+    padding: 10px;
+    display: block;
 }
 
 main {
@@ -41,7 +41,7 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: #FEAA00;
 }
 
 ul {
@@ -54,7 +54,7 @@ li {
 }
 
 .social-media img {
-    width: 100px;
+    width: 50px;
     margin-right: 10px;
 }
 
@@ -63,12 +63,8 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    color: white;
 }
 
-h2 {
-    color: #FEAA00;
-}
 .add-to-basket {
     background-color: #FEAA00;
     color: #342628;
@@ -89,3 +85,50 @@ header form {
     top: 10px;
     right: 10px;
 }
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .social-media img {
+        width: 30px;
+    }
+
+    header form {
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .add-to-basket {
+        padding: 8px 16px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    ::placeholder {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    ::placeholder {
+        font-size: 12px;
+    }
+}
+
